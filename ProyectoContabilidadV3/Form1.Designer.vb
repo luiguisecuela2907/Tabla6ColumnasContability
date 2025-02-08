@@ -26,6 +26,7 @@ Partial Class Form1
         BtnTabla = New Button()
         BtnSalir = New Button()
         GroupBox1 = New GroupBox()
+        Label1 = New Label()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -72,15 +73,28 @@ Partial Class Form1
         GroupBox1.TabIndex = 3
         GroupBox1.TabStop = False
         ' 
+        ' Label1
+        ' 
+        Label1.BackColor = Color.Thistle
+        Label1.Font = New Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = SystemColors.ControlText
+        Label1.Location = New Point(12, 9)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(420, 189)
+        Label1.TabIndex = 4
+        Label1.Text = "ECOCLEAN"
+        Label1.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(444, 644)
+        Controls.Add(Label1)
         Controls.Add(GroupBox1)
         Margin = New Padding(4, 5, 4, 5)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Eco Clean - Contabilidad"
         GroupBox1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
@@ -89,5 +103,6 @@ Partial Class Form1
     Friend WithEvents BtnTabla As Button
     Friend WithEvents BtnSalir As Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label1 As Label
 
 End Class

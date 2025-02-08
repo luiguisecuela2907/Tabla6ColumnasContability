@@ -109,7 +109,7 @@ Public Class Form3
             dgvReporte.Rows.Add("Utilidad del Ejercicio", 0, 0, totalDebeGanancias, totalHaberGanancias, 0, utilEjercicio)
             dgvReporte.Rows.Add("Totales", 0, 0, 0, 0, totalDebeGeneral, totalHaberGeneral + utilEjercicio)
         ElseIf utilEjercicio < 0 Then
-            Math.Abs(utilEjercicio)
+            Math.Abs(utilEjercicio) 'Volver valor en positivo
             dgvReporte.Rows.Add("Perdida del Ejercicio", 0, 0, totalDebeGanancias, totalHaberGanancias, utilEjercicio, 0)
             dgvReporte.Rows.Add("Totales", 0, 0, 0, 0, totalDebeGeneral + utilEjercicio, totalHaberGeneral)
         End If

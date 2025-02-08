@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SQLite
+'dbPath = data base path = ruta de base de datos
 
 Public Class DatabaseManager
     Private connectionString As String

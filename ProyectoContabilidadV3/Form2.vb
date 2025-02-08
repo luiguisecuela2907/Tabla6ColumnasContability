@@ -1,4 +1,5 @@
 ﻿Public Class Form2
+    'dbManager = administrador de base de datos
     Private dbManager As DatabaseManager
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -77,4 +78,8 @@
         End If
         Return True
     End Function
+
+    Private Sub BttSalir_Click(sender As Object, e As EventArgs) Handles BttSalir.Click
+        Close()
+    End Sub
 End Class
